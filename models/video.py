@@ -4,9 +4,9 @@ from typing import Union, List
 # from pydantic import BaseModel
 
 redis = get_redis_connection(
-    host="redis-11271.c305.ap-south-1-1.ec2.cloud.redislabs.com",
-    port=11271,
-    password="NtC3b2QkRA5cUQdzKkxpXiVuMm6wC4Lp",
+    host="",
+    port="",
+    password="",
     decode_responses=True)
 
 
