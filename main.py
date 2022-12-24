@@ -5,6 +5,7 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
+from config.project_variables import APP_HOST
 from models.video import Video
 from models.user_keyword import UserKeyword
 from services.video_transcript import VideoTranscript

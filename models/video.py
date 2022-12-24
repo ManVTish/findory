@@ -1,13 +1,8 @@
+from config.database import redis
 
-from redis_om import get_redis_connection, JsonModel #HashModel
+from redis_om import JsonModel
 from typing import Union, List
 # from pydantic import BaseModel
-
-redis = get_redis_connection(
-    host = REDIS_STORAGE_HOST,
-    port = REDIS_PORT,
-    password = REDIS_STORAGE_PASSWORD,
-    decode_responses = True)
 
 
 class Video(JsonModel):

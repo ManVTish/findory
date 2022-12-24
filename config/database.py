@@ -1,3 +1,4 @@
+from config.project_variables import REDIS_STORAGE_HOST, REDIS_PORT, REDIS_STORAGE_PASSWORD
 from redis_om import get_redis_connection
 
 redis = get_redis_connection(
