@@ -4,10 +4,10 @@ from typing import Union, List
 # from pydantic import BaseModel
 
 redis = get_redis_connection(
-    host="",
-    port="",
-    password="",
-    decode_responses=True)
+    host = REDIS_STORAGE_HOST,
+    port = REDIS_PORT,
+    password = REDIS_STORAGE_PASSWORD,
+    decode_responses = True)
 
 
 class Video(JsonModel):
