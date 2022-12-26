@@ -8,6 +8,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from config.project_variables import APP_HOST
 from models.video import Video
 from models.user_keyword import UserKeyword
+from models.user_data import UserData
 from services.video_transcript import VideoTranscript
 
 app = FastAPI()
