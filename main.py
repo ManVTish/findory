@@ -37,3 +37,11 @@ def get_keyword_record(keyword_data: UserKeyword):
     transcript = video.user_video_transcript
     return VideoTranscript.search_keyword(keyword_data.keyword, transcript)
 
+
+@app.post('/video/keyword')
+def find_keyword_timestamp(user_data: UserData):
+    video_id = user_data.main_video_id
+    keyword_data = user_data.keyword
+    transcripts = VideoTranscript.find_video_transcript(video_id)
+    return VideoTranscript.search_keyword(keyword_data, transcripts)
+
