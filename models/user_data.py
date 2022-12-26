@@ -1,6 +1,6 @@
-from models.video import redis, JsonModel
+from pydantic import BaseModel
 
-class UserData(JsonModel):
+class UserData(BaseModel):
     main_video_id: str
     keyword: str
 
