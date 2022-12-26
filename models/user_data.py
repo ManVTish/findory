@@ -4,6 +4,3 @@ class UserData(JsonModel):
     main_video_id: str
     keyword: str
 
-    class Meta:
-        database = redis
-
