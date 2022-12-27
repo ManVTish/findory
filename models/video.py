@@ -8,5 +8,5 @@ class Video(BaseModel):
     user_id: str
     keyword: str
     transcripts: Optional[List] = None
-    time_stamp: TimeStamps[List]
+    time_stamp: List[TimeStamps]
 
