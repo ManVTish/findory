@@ -4,5 +4,5 @@ from typing import Optional
 class Users(BaseModel):
     username: str
     password: str
-    membership: bool
+    membership: Optional[bool] = false
 
