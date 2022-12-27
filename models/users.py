@@ -1,5 +1,4 @@
-from pydantic import BaseModel
-from typing import Optional
+from models.common_lib import Optional, BaseModel, List
 
 class Users(BaseModel):
     username: str

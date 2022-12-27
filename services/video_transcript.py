@@ -1,5 +1,5 @@
 # from typing import List
-from models.video import List
+from models.common_lib import List
 from youtube_transcript_api import YouTubeTranscriptApi
 
 class VideoTranscript:
